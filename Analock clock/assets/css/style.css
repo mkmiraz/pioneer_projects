@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  background: #000;
+  margin: 100px auto 0;
+  background-image: url("../img/images.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110% 110%;
+  border-radius: 50%;
+  border: 20px solid rgb(236, 236, 236);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: -1px -1px 4px #ddd;
+}
+
+.s {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(10deg);
+  z-index: 99;
+}
+
+.s::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 200px;
+  background: #000000;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+  background-color: rgb(211, 15, 15);
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    80% 1%,
+    80% 100%,
+    80% 68%,
+    80% 100%,
+    50% 100%,
+    24% 100%,
+    24% 65%,
+    24% 100%,
+    25% 1%
+  );
+}
+
+.m {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(100deg);
+  z-index: 9;
+}
+.m::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 170px;
+  background: #000;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    80% 1%,
+    80% 100%,
+    80% 68%,
+    80% 100%,
+    50% 100%,
+    24% 100%,
+    24% 65%,
+    24% 100%,
+    25% 1%
+  );
+}
+
+.h {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(40deg);
+  z-index: 1;
+}
+.h::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 150px;
+  background: #000;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  clip-path: polygon(
+    50% 0,
+    80% 1%,
+    80% 100%,
+    80% 68%,
+    80% 100%,
+    50% 100%,
+    24% 100%,
+    24% 65%,
+    24% 100%,
+    25% 1%
+  );
+}
